@@ -1,7 +1,7 @@
-package com.ORT.config;
+package org.example.moreman.config;
 
-import com.ORT.model.response.UserInfo;
-import com.ORT.repository.UserRepository;
+import org.example.moreman.model.response.UserInfo;
+import org.example.moreman.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -14,6 +14,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
 @Configuration
 public class ApplicationConfig {
 
@@ -42,7 +43,6 @@ public class ApplicationConfig {
             }
         };
     }
-
 
     @Bean
     public AuthenticationProvider authenticationProvider() {

@@ -1,4 +1,4 @@
-package com.ORT.model.response;
+package org.example.moreman.model.response;
 
 public record OtpResponse(
         String quid,

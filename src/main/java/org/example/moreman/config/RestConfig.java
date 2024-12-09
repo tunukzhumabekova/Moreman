@@ -1,4 +1,4 @@
-package com.ORT.config;
+package org.example.moreman.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,6 @@
-package com.ORT.model.response;
+package org.example.moreman.model.response;
 
-import com.databil.mentormind.public_.enums.Role;
+import com.agro.public_.enums.Role;
 import lombok.Builder;
 
 @Builder
@@ -8,7 +8,4 @@ public record Authentication(
         int id,
         String email,
         String token,
-        Role role,
-        String userName
-) {
-}
+        Role role) {}

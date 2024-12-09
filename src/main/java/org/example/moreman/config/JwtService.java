@@ -1,6 +1,7 @@
-package com.ORT.config;
+package org.example.moreman.config;
 
-import com.databil.mentormind.public_.tables.records.UserInfosRecord;
+
+import com.agro.public_.tables.records.UserInfosRecord;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.MalformedJwtException;

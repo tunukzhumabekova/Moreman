@@ -1,4 +1,4 @@
-package com.ORT.model.request;
+package org.example.moreman.model.request;
 
 public record SignIn(
         String email,

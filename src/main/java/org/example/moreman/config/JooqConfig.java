@@ -1,4 +1,4 @@
-package com.ORT.config;
+package org.example.moreman.config;
 import org.jooq.DSLContext;
 import org.jooq.SQLDialect;
 import org.jooq.conf.RenderNameStyle;

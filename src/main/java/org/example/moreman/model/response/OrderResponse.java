@@ -1,4 +1,11 @@
 package org.example.moreman.model.response;
 
-public class OrderResponse {
-}
+import java.time.LocalDateTime;
+
+public record OrderResponse(
+        Integer orderId,
+        Integer productId,
+        Integer quantity,
+        LocalDateTime localDateTime
+        )
+{}

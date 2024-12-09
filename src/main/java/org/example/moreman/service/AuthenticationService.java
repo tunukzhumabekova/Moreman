@@ -1,21 +1,12 @@
-package com.ORT.service;
+package org.example.moreman.service;
 
-import com.ORT.model.request.SignIn;
-import com.ORT.model.request.SignUp;
-import com.ORT.model.request.SignUpRequest;
-import com.ORT.model.response.Authentication;
-import jakarta.mail.MessagingException;
+
+import org.example.moreman.exception.AuthenticationException;
+import org.example.moreman.model.request.SignIn;
+import org.example.moreman.model.response.Authentication;
 
 public interface AuthenticationService {
-    Authentication signUp(SignUp signUp);
 
-    Authentication signIn(SignIn signIn);
+    Authentication signIn(SignIn signIn) throws AuthenticationException;
 
-    void getCodeForResetPassword(String email) throws MessagingException;
-
-    void resetPassword(String email, String newPassword, String confirmPassword);
-
-    void confirmResetPassword(String email, String code);
-
-    Authentication register(SignUpRequest signUpRequest);
 }

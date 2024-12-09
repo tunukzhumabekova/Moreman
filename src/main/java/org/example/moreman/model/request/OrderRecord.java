@@ -1,4 +1,11 @@
 package org.example.moreman.model.request;
 
-public record OrderRecord() {
-}
+import java.time.LocalDateTime;
+
+public record OrderRecord(
+        Integer productId,
+        Integer quantity
+
+
+)
+{}

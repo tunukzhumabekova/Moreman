@@ -1,5 +1,5 @@
 
-package com.ORT.config;
+package org.example.moreman.config;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;

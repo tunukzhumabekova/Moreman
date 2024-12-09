@@ -1,4 +1,4 @@
-package com.ORT.config;
+package org.example.moreman.config;
 
 import org.flywaydb.core.Flyway;
 import org.springframework.beans.factory.annotation.Autowired;

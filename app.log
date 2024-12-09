@@ -1,0 +1,808 @@
+2024-12-09T14:30:38.166+06:00  INFO 45548 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 45548 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T14:30:38.180+06:00  INFO 45548 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T14:30:40.422+06:00  INFO 45548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T14:30:40.438+06:00  INFO 45548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T14:30:40.438+06:00  INFO 45548 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T14:30:40.503+06:00  INFO 45548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T14:30:40.504+06:00  INFO 45548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2232 ms
+2024-12-09T14:30:40.697+06:00  INFO 45548 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T14:30:40.698+06:00  INFO 45548 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T14:30:40.698+06:00  INFO 45548 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T14:30:40.710+06:00  INFO 45548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T14:30:40.861+06:00  INFO 45548 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@370c7cc5
+2024-12-09T14:30:40.862+06:00  INFO 45548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T14:30:40.879+06:00  INFO 45548 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T14:30:40.907+06:00  INFO 45548 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
+2024-12-09T14:30:40.973+06:00  INFO 45548 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T14:30:40.974+06:00 ERROR 45548 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T14:30:40.978+06:00  INFO 45548 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T14:30:41.677+06:00 DEBUG 45548 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T14:30:42.001+06:00 DEBUG 45548 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T14:30:42.064+06:00 DEBUG 45548 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T14:30:42.095+06:00  INFO 45548 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bd4780c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c154508, org.springframework.security.web.context.SecurityContextHolderFilter@573870cb, org.springframework.security.web.header.HeaderWriterFilter@237aa0c7, org.springframework.web.filter.CorsFilter@4bbc21bd, org.springframework.security.web.authentication.logout.LogoutFilter@3dd750ba, org.example.moreman.config.JwtAuthenticationFilter@23bd047f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2739ecc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2932e15f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@395eb363, org.springframework.security.web.session.SessionManagementFilter@2b1d1a5, org.springframework.security.web.access.ExceptionTranslationFilter@6ffbf0ac, org.springframework.security.web.access.intercept.AuthorizationFilter@14b26e90]
+2024-12-09T14:30:42.184+06:00 DEBUG 45548 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T14:30:42.231+06:00 DEBUG 45548 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T14:30:42.515+06:00  INFO 45548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T14:30:42.536+06:00  INFO 45548 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 5.109 seconds (process running for 6.455)
+2024-12-09T14:30:48.472+06:00  INFO 45548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T14:30:48.472+06:00  INFO 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T14:30:48.472+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T14:30:48.472+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T14:30:48.472+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T14:30:48.474+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5dc43bf7
+2024-12-09T14:30:48.474+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2042804d
+2024-12-09T14:30:48.474+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T14:30:48.474+06:00  INFO 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-09T14:30:48.489+06:00  WARN 45548 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T14:30:48.504+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-12-09T14:30:48.506+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.535+06:00 DEBUG 45548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.612+06:00 DEBUG 45548 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-12-09T14:30:48.613+06:00 DEBUG 45548 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.615+06:00 DEBUG 45548 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-12-09T14:30:48.616+06:00 DEBUG 45548 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.616+06:00 DEBUG 45548 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-12-09T14:30:48.616+06:00 DEBUG 45548 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.619+06:00 DEBUG 45548 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.620+06:00 DEBUG 45548 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.620+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-12-09T14:30:48.620+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.621+06:00 DEBUG 45548 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-12-09T14:30:48.622+06:00 DEBUG 45548 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.638+06:00 DEBUG 45548 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.643+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.648+06:00 DEBUG 45548 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.794+06:00 DEBUG 45548 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-12-09T14:30:48.794+06:00 DEBUG 45548 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-12-09T14:30:48.801+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-12-09T14:30:48.802+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:30:48.804+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.809+06:00 DEBUG 45548 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-09T14:30:48.811+06:00 DEBUG 45548 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2024-12-09T14:30:48.818+06:00 DEBUG 45548 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:48.839+06:00 DEBUG 45548 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-12-09T14:30:48.840+06:00 DEBUG 45548 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-12-09T14:30:49.434+06:00  INFO 45548 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 584 ms
+2024-12-09T14:30:49.468+06:00 DEBUG 45548 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-12-09T14:30:49.468+06:00 DEBUG 45548 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-12-09T14:30:49.468+06:00 DEBUG 45548 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:30:57.358+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/sign-in", parameters={}
+2024-12-09T14:30:57.359+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.AuthenticationController#signIn(SignIn)
+2024-12-09T14:30:57.394+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignIn[email=string, password=string]]
+2024-12-09T14:30:58.301+06:00  INFO 45548 --- [http-nio-8080-exec-6] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T14:30:58.301+06:00  INFO 45548 --- [http-nio-8080-exec-6] org.jooq.Constants                       : 
+
+jOOQ tip of the day: In order to improve cardinality estimates, it can be valuable to auto-inline bind variables on certain columns, e.g. on enum types: https://www.jooq.org/doc/latest/manual/sql-building/dsl-context/custom-settings/settings-auto-inline-bind-values/
+
+2024-12-09T14:30:59.537+06:00  INFO 45548 --- [http-nio-8080-exec-6] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T14:31:01.006+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:31:01.021+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Authentication[id=1, email=string, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHJpbmciLCJpYXQiOjE3MzM3Mz (truncated)...]
+2024-12-09T14:31:01.021+06:00 DEBUG 45548 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:31:34.221+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/orders/createOrder?productId=1&quantity=1", parameters={masked}
+2024-12-09T14:31:34.221+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.OrderController#createOrder(Integer, Integer)
+2024-12-09T14:31:34.338+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.example.moreman.exception.AppExceptionHandler#handleGenericException(Exception)
+2024-12-09T14:31:34.355+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:31:34.355+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse[httpStatus=500 INTERNAL_SERVER_ERROR, exceptionClassName=MappingException, message (truncated)...]
+2024-12-09T14:31:34.355+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.jooq.exception.MappingException: No DefaultRecordMapper strategy applies to type class org.example.moreman.model.request.OrderRecord for row type "public"."orders"."id", "public"."orders"."product_id", "public"."orders"."quantity", "public"."orders"."date". Attempted strategies include (in this order):<EOL>- Is type an array (false)?<EOL>- Is type a Stream (false)?<EOL>- Does row type have only 1 column (false) and did ConverterProvider provide a Converter for type (check skipped)?<EOL>- Is type abstract (false)?<EOL>- Is type a org.jooq.Record (false)?<EOL>- Is type a mutable POJO (a POJO with setters or non-final members: false) and has a no-args constructor (check skipped)?<EOL>- Does type have a @ConstructorProperties annotated constructor (false) and is Settings.mapConstructorPropertiesParameterNames enabled (true)?<EOL>- Is type a java.lang.Record (check skipped) and is Settings.mapRecordComponentParameterNames enabled (false)?<EOL>- Is type a kotlin class (false) and is Settings.mapConstructorParameterNamesInKotlin enabled (check skipped)?<EOL>- Is there a constructor that matches row type's degrees with nested fields (false) or flat fields (false)<EOL>- Is the type a top level class (true) or static nested class (false)?<EOL>-   (Inner classes cannot be created via reflection)<EOL>- Is Settings.mapConstructorParameterNames enabled (false)<EOL>]
+2024-12-09T14:31:34.355+06:00 DEBUG 45548 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-09T14:34:18.457+06:00  INFO 45548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T14:34:18.482+06:00  INFO 45548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T14:35:29.406+06:00  INFO 43540 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 43540 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T14:35:29.409+06:00  INFO 43540 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T14:35:31.193+06:00  INFO 43540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T14:35:31.201+06:00  INFO 43540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T14:35:31.201+06:00  INFO 43540 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T14:35:31.282+06:00  INFO 43540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T14:35:31.282+06:00  INFO 43540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1815 ms
+2024-12-09T14:35:31.465+06:00  INFO 43540 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T14:35:31.465+06:00  INFO 43540 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T14:35:31.465+06:00  INFO 43540 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T14:35:31.477+06:00  INFO 43540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T14:35:31.623+06:00  INFO 43540 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@250967f1
+2024-12-09T14:35:31.624+06:00  INFO 43540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T14:35:31.645+06:00  INFO 43540 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T14:35:31.677+06:00  INFO 43540 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.017s)
+2024-12-09T14:35:31.738+06:00  INFO 43540 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T14:35:31.739+06:00 ERROR 43540 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T14:35:31.745+06:00  INFO 43540 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T14:35:32.371+06:00 DEBUG 43540 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T14:35:32.643+06:00 DEBUG 43540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T14:35:32.714+06:00 DEBUG 43540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T14:35:32.750+06:00  INFO 43540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c3710b3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8b1202a, org.springframework.security.web.context.SecurityContextHolderFilter@4bc21e34, org.springframework.security.web.header.HeaderWriterFilter@3e2772a9, org.springframework.web.filter.CorsFilter@67a0ff25, org.springframework.security.web.authentication.logout.LogoutFilter@3dec79f8, org.example.moreman.config.JwtAuthenticationFilter@30358dc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bb6869a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@506b083, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34bddf43, org.springframework.security.web.session.SessionManagementFilter@2932e15f, org.springframework.security.web.access.ExceptionTranslationFilter@79445efb, org.springframework.security.web.access.intercept.AuthorizationFilter@1e194966]
+2024-12-09T14:35:32.829+06:00 DEBUG 43540 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T14:35:32.863+06:00 DEBUG 43540 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T14:35:33.116+06:00  INFO 43540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T14:35:33.125+06:00  INFO 43540 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.331 seconds (process running for 5.277)
+2024-12-09T14:35:38.616+06:00  INFO 43540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T14:35:38.616+06:00  INFO 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T14:35:38.616+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T14:35:38.616+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T14:35:38.616+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T14:35:38.617+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e72c962
+2024-12-09T14:35:38.618+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@399e9595
+2024-12-09T14:35:38.619+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T14:35:38.619+06:00  INFO 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-09T14:35:39.025+06:00  INFO 43540 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T14:35:39.026+06:00  INFO 43540 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+
+jOOQ tip of the day: When plain SQL templating is not enough, you can write dialect agnostic CustomQueryPart implementations: https://www.jooq.org/doc/latest/manual/sql-building/queryparts/custom-queryparts/
+
+2024-12-09T14:35:39.440+06:00  INFO 43540 --- [http-nio-8080-exec-1] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T14:35:39.482+06:00  WARN 43540 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/orders/createOrder' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T14:35:39.490+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/orders/createOrder?productId=1&quantity=1", parameters={masked}
+2024-12-09T14:35:39.492+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.OrderController#createOrder(Integer, Integer)
+2024-12-09T14:35:39.555+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:35:39.558+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [+----+----------+--------+--------------------------+<EOL>|  id|product_id|quantity|date                 (truncated)...]
+2024-12-09T14:35:39.583+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.example.moreman.exception.AppExceptionHandler#handleGenericException(Exception)
+2024-12-09T14:35:39.588+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:35:39.589+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse[httpStatus=500 INTERNAL_SERVER_ERROR, exceptionClassName=HttpMessageConversionExce (truncated)...]
+2024-12-09T14:35:39.591+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.jooq.TableOptions]]
+2024-12-09T14:35:39.591+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-09T14:35:49.966+06:00 DEBUG 43540 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-12-09T14:35:49.966+06:00 DEBUG 43540 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:49.992+06:00 DEBUG 43540 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.021+06:00 DEBUG 43540 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-12-09T14:35:50.022+06:00 DEBUG 43540 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.024+06:00 DEBUG 43540 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-12-09T14:35:50.024+06:00 DEBUG 43540 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-12-09T14:35:50.024+06:00 DEBUG 43540 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.024+06:00 DEBUG 43540 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-12-09T14:35:50.024+06:00 DEBUG 43540 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.024+06:00 DEBUG 43540 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.029+06:00 DEBUG 43540 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-12-09T14:35:50.031+06:00 DEBUG 43540 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.031+06:00 DEBUG 43540 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.034+06:00 DEBUG 43540 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.040+06:00 DEBUG 43540 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.050+06:00 DEBUG 43540 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.050+06:00 DEBUG 43540 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.171+06:00 DEBUG 43540 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-12-09T14:35:50.171+06:00 DEBUG 43540 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-12-09T14:35:50.178+06:00 DEBUG 43540 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-09T14:35:50.178+06:00 DEBUG 43540 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-12-09T14:35:50.178+06:00 DEBUG 43540 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2024-12-09T14:35:50.184+06:00 DEBUG 43540 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.184+06:00 DEBUG 43540 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.188+06:00 DEBUG 43540 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:50.206+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-12-09T14:35:50.207+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-12-09T14:35:50.214+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-12-09T14:35:50.215+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:35:50.215+06:00 DEBUG 43540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:35:55.436+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.example.moreman.exception.AppExceptionHandler#handleGenericException(Exception)
+2024-12-09T14:35:55.440+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json]
+2024-12-09T14:35:55.440+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse[httpStatus=500 INTERNAL_SERVER_ERROR, exceptionClassName=ServletException, message (truncated)...]
+2024-12-09T14:35:55.440+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.StackOverflowError]
+2024-12-09T14:35:55.442+06:00 DEBUG 43540 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-09T14:37:58.361+06:00  INFO 43540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T14:37:58.365+06:00  INFO 43540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T14:40:52.466+06:00  INFO 14132 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 14132 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T14:40:52.468+06:00  INFO 14132 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T14:40:54.448+06:00  INFO 14132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T14:40:54.460+06:00  INFO 14132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T14:40:54.460+06:00  INFO 14132 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T14:40:54.516+06:00  INFO 14132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T14:40:54.516+06:00  INFO 14132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1994 ms
+2024-12-09T14:40:54.784+06:00  INFO 14132 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T14:40:54.784+06:00  INFO 14132 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T14:40:54.784+06:00  INFO 14132 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T14:40:54.796+06:00  INFO 14132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T14:40:54.938+06:00  INFO 14132 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4bce62b
+2024-12-09T14:40:54.939+06:00  INFO 14132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T14:40:54.954+06:00  INFO 14132 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T14:40:54.984+06:00  INFO 14132 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.017s)
+2024-12-09T14:40:55.037+06:00  INFO 14132 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T14:40:55.038+06:00 ERROR 14132 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T14:40:55.039+06:00  INFO 14132 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T14:40:55.664+06:00 DEBUG 14132 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T14:40:55.948+06:00 DEBUG 14132 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T14:40:56.026+06:00 DEBUG 14132 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T14:40:56.062+06:00  INFO 14132 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34bddf43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57839834, org.springframework.security.web.context.SecurityContextHolderFilter@bb6869a, org.springframework.security.web.header.HeaderWriterFilter@1fa18f87, org.springframework.web.filter.CorsFilter@166e5a6d, org.springframework.security.web.authentication.logout.LogoutFilter@14b26e90, org.example.moreman.config.JwtAuthenticationFilter@50bf795f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eee3da9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ace2408, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3355b8ff, org.springframework.security.web.session.SessionManagementFilter@2375a976, org.springframework.security.web.access.ExceptionTranslationFilter@3e2772a9, org.springframework.security.web.access.intercept.AuthorizationFilter@103e7c7c]
+2024-12-09T14:40:56.141+06:00 DEBUG 14132 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T14:40:56.168+06:00 DEBUG 14132 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T14:40:56.419+06:00  INFO 14132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T14:40:56.427+06:00  INFO 14132 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.486 seconds (process running for 5.297)
+2024-12-09T14:41:00.955+06:00  INFO 14132 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T14:41:00.955+06:00  INFO 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T14:41:00.955+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T14:41:00.955+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T14:41:00.955+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T14:41:00.956+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@116195ef
+2024-12-09T14:41:00.956+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2e20c451
+2024-12-09T14:41:00.957+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T14:41:00.957+06:00  INFO 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-09T14:41:00.971+06:00  WARN 14132 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T14:41:00.985+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-12-09T14:41:00.987+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.010+06:00 DEBUG 14132 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.033+06:00 DEBUG 14132 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-12-09T14:41:01.034+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-12-09T14:41:01.034+06:00 DEBUG 14132 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-12-09T14:41:01.034+06:00 DEBUG 14132 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.034+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.034+06:00 DEBUG 14132 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.035+06:00 DEBUG 14132 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-12-09T14:41:01.035+06:00 DEBUG 14132 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-12-09T14:41:01.036+06:00 DEBUG 14132 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.036+06:00 DEBUG 14132 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.037+06:00 DEBUG 14132 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.043+06:00 DEBUG 14132 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.048+06:00 DEBUG 14132 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.051+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.056+06:00 DEBUG 14132 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.122+06:00 DEBUG 14132 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-12-09T14:41:01.123+06:00 DEBUG 14132 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-12-09T14:41:01.124+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-12-09T14:41:01.124+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T14:41:01.126+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.136+06:00 DEBUG 14132 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-09T14:41:01.137+06:00 DEBUG 14132 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2024-12-09T14:41:01.141+06:00 DEBUG 14132 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:01.160+06:00 DEBUG 14132 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-12-09T14:41:01.160+06:00 DEBUG 14132 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-12-09T14:41:01.503+06:00  INFO 14132 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 332 ms
+2024-12-09T14:41:01.517+06:00 DEBUG 14132 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-12-09T14:41:01.519+06:00 DEBUG 14132 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-12-09T14:41:01.520+06:00 DEBUG 14132 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:08.368+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/sign-in", parameters={}
+2024-12-09T14:41:08.368+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.AuthenticationController#signIn(SignIn)
+2024-12-09T14:41:08.390+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignIn[email=string, password=string]]
+2024-12-09T14:41:09.221+06:00  INFO 14132 --- [http-nio-8080-exec-4] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T14:41:09.221+06:00  INFO 14132 --- [http-nio-8080-exec-4] org.jooq.Constants                       : 
+
+jOOQ tip of the day: When working with jOOQ and JPA, you can generate your jOOQ code also from your JPA entities rather than a live database: https://www.jooq.org/doc/latest/manual/code-generation/codegen-jpa/
+
+2024-12-09T14:41:09.805+06:00  INFO 14132 --- [http-nio-8080-exec-4] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T14:41:11.104+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:41:11.104+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Authentication[id=1, email=string, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHJpbmciLCJpYXQiOjE3MzM3Mz (truncated)...]
+2024-12-09T14:41:11.120+06:00 DEBUG 14132 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:41:29.175+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/orders/createOrder?productId=1&quantity=1", parameters={masked}
+2024-12-09T14:41:29.175+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.OrderController#createOrder(Integer, Integer)
+2024-12-09T14:41:29.261+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:41:29.275+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [OrderRecord[productId=1, quantity=1]]
+2024-12-09T14:41:29.276+06:00 DEBUG 14132 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-12-09T14:42:20.876+06:00  INFO 14132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T14:42:20.884+06:00  INFO 14132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T14:42:49.284+06:00  INFO 47836 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 47836 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T14:42:49.290+06:00  INFO 47836 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T14:42:51.144+06:00  INFO 47836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T14:42:51.152+06:00  INFO 47836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T14:42:51.152+06:00  INFO 47836 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T14:42:51.212+06:00  INFO 47836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T14:42:51.213+06:00  INFO 47836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1852 ms
+2024-12-09T14:42:51.417+06:00  INFO 47836 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T14:42:51.417+06:00  INFO 47836 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T14:42:51.417+06:00  INFO 47836 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T14:42:51.429+06:00  INFO 47836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T14:42:51.578+06:00  INFO 47836 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@274fdea6
+2024-12-09T14:42:51.579+06:00  INFO 47836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T14:42:51.595+06:00  INFO 47836 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T14:42:51.621+06:00  INFO 47836 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
+2024-12-09T14:42:51.685+06:00  INFO 47836 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T14:42:51.685+06:00 ERROR 47836 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T14:42:51.688+06:00  INFO 47836 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T14:42:52.276+06:00 DEBUG 47836 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T14:42:52.551+06:00 DEBUG 47836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T14:42:52.614+06:00 DEBUG 47836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T14:42:52.649+06:00  INFO 47836 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23708f14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dfc59c5, org.springframework.security.web.context.SecurityContextHolderFilter@5c1dd18, org.springframework.security.web.header.HeaderWriterFilter@41e7a544, org.springframework.web.filter.CorsFilter@37bda983, org.springframework.security.web.authentication.logout.LogoutFilter@395eb363, org.example.moreman.config.JwtAuthenticationFilter@4f402027, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5178345d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b2d58e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cff5aa3, org.springframework.security.web.session.SessionManagementFilter@5eee3da9, org.springframework.security.web.access.ExceptionTranslationFilter@117fb9ba, org.springframework.security.web.access.intercept.AuthorizationFilter@3355b8ff]
+2024-12-09T14:42:52.723+06:00 DEBUG 47836 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T14:42:52.751+06:00 DEBUG 47836 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T14:42:52.997+06:00  INFO 47836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T14:42:53.004+06:00  INFO 47836 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.327 seconds (process running for 5.086)
+2024-12-09T14:43:05.969+06:00  INFO 47836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T14:43:05.969+06:00  INFO 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T14:43:05.969+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T14:43:05.969+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T14:43:05.969+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T14:43:05.970+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@26f0e74e
+2024-12-09T14:43:05.970+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7aca2594
+2024-12-09T14:43:05.971+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T14:43:05.971+06:00  INFO 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-09T14:43:06.387+06:00  INFO 47836 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T14:43:06.387+06:00  INFO 47836 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+
+jOOQ tip of the day: Views (and table valued functions) are the most underrated SQL feature! They work very well together with jOOQ and jOOQ's code generator! https://www.jooq.org/doc/latest/manual/code-generation/codegen-advanced/codegen-config-database/codegen-database-table-valued-functions/
+
+2024-12-09T14:43:06.606+06:00  INFO 47836 --- [http-nio-8080-exec-1] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T14:43:06.654+06:00  WARN 47836 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/orders/createOrder' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T14:43:06.664+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/orders/createOrder?productId=1&quantity=1", parameters={masked}
+2024-12-09T14:43:06.666+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.OrderController#createOrder(Integer, Integer)
+2024-12-09T14:43:06.729+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:43:06.734+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [OrderRecord[orderId=5, productId=1, quantity=1, localDateTime=2024-12-09T14:43:06.701174]]
+2024-12-09T14:43:06.741+06:00 DEBUG 47836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-12-09T14:46:45.625+06:00 DEBUG 47836 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/categories?name=hjk&image=ghj", parameters={masked}
+2024-12-09T14:46:45.628+06:00 DEBUG 47836 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.CategoryController#createCategory(String, String)
+2024-12-09T14:46:45.641+06:00 DEBUG 47836 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:46:45.641+06:00 DEBUG 47836 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CategoryRecord[id=2, name=ghj, image=hjk]]
+2024-12-09T14:46:45.641+06:00 DEBUG 47836 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:47:11.824+06:00 DEBUG 47836 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/products", parameters={}
+2024-12-09T14:47:11.824+06:00 DEBUG 47836 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.ProductController#createProduct(ProductRecord)
+2024-12-09T14:47:11.857+06:00 DEBUG 47836 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ProductRecord[name=string, image=string, price=0, quantity=0, description=string, isPopular=true, ca (truncated)...]
+2024-12-09T14:47:11.875+06:00 DEBUG 47836 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:47:11.875+06:00 DEBUG 47836 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ProductRecord[name=string, image=string, price=0, quantity=0, description=string, isPopular=true, ca (truncated)...]
+2024-12-09T14:47:11.875+06:00 DEBUG 47836 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:47:39.877+06:00 DEBUG 47836 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/products/getByCategoryId?categoryId=1", parameters={masked}
+2024-12-09T14:47:39.877+06:00 DEBUG 47836 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.ProductController#getProductsByCategoryId(int)
+2024-12-09T14:47:39.891+06:00 DEBUG 47836 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:47:39.891+06:00 DEBUG 47836 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[ProductRecord[name=string, image=string, price=84, quantity=0, description=string, isPopular=true,  (truncated)...]
+2024-12-09T14:47:39.891+06:00 DEBUG 47836 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:47:54.919+06:00 DEBUG 47836 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/sign-in", parameters={}
+2024-12-09T14:47:54.919+06:00 DEBUG 47836 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.AuthenticationController#signIn(SignIn)
+2024-12-09T14:47:54.930+06:00 DEBUG 47836 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignIn[email=string, password=string]]
+2024-12-09T14:47:56.057+06:00 DEBUG 47836 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T14:47:56.057+06:00 DEBUG 47836 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Authentication[id=1, email=string, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHJpbmciLCJpYXQiOjE3MzM3Mz (truncated)...]
+2024-12-09T14:47:56.069+06:00 DEBUG 47836 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T14:59:19.425+06:00  WARN 47836 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m27s626ms739µs400ns).
+2024-12-09T15:08:48.524+06:00  INFO 47836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:08:48.549+06:00  INFO 47836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T15:09:25.272+06:00  INFO 45592 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 45592 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T15:09:25.275+06:00  INFO 45592 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T15:09:27.700+06:00  INFO 45592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T15:09:27.719+06:00  INFO 45592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T15:09:27.719+06:00  INFO 45592 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T15:09:27.804+06:00  INFO 45592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T15:09:27.804+06:00  INFO 45592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2465 ms
+2024-12-09T15:09:28.040+06:00  INFO 45592 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T15:09:28.040+06:00  INFO 45592 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T15:09:28.040+06:00  INFO 45592 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T15:09:28.040+06:00  INFO 45592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T15:09:28.331+06:00  INFO 45592 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ddeb27f
+2024-12-09T15:09:28.332+06:00  INFO 45592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T15:09:28.347+06:00  INFO 45592 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T15:09:28.369+06:00  INFO 45592 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
+2024-12-09T15:09:28.435+06:00  INFO 45592 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T15:09:28.436+06:00 ERROR 45592 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T15:09:28.439+06:00  INFO 45592 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T15:09:29.163+06:00 DEBUG 45592 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T15:09:29.437+06:00 DEBUG 45592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T15:09:29.504+06:00 DEBUG 45592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T15:09:29.551+06:00  INFO 45592 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7eefaca0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d5ef1c3, org.springframework.security.web.context.SecurityContextHolderFilter@1592e540, org.springframework.security.web.header.HeaderWriterFilter@570ed9c, org.springframework.web.filter.CorsFilter@47be41c6, org.springframework.security.web.authentication.logout.LogoutFilter@ace2408, org.example.moreman.config.JwtAuthenticationFilter@39374689, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4449b273, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fa18f87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33eab2e8, org.springframework.security.web.session.SessionManagementFilter@2b400bd0, org.springframework.security.web.access.ExceptionTranslationFilter@74a5bef0, org.springframework.security.web.access.intercept.AuthorizationFilter@27b490de]
+2024-12-09T15:09:29.658+06:00 DEBUG 45592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T15:09:29.705+06:00 DEBUG 45592 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T15:09:30.005+06:00  INFO 45592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T15:09:30.037+06:00  INFO 45592 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 5.452 seconds (process running for 6.568)
+2024-12-09T15:09:48.113+06:00  INFO 45592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T15:09:48.113+06:00  INFO 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T15:09:48.113+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T15:09:48.113+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T15:09:48.113+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T15:09:48.113+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5809c106
+2024-12-09T15:09:48.113+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4493857f
+2024-12-09T15:09:48.113+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T15:09:48.113+06:00  INFO 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-09T15:09:49.229+06:00  INFO 45592 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T15:09:49.229+06:00  INFO 45592 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+
+jOOQ tip of the day: 
+ 
+2024-12-09T15:09:50.096+06:00  INFO 45592 --- [http-nio-8080-exec-1] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T15:09:50.194+06:00  WARN 45592 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/products' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T15:09:50.226+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/products", parameters={}
+2024-12-09T15:09:50.227+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.ProductController#createProduct(ProductRecord)
+2024-12-09T15:09:50.294+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ProductRecord[name=string, image=string, price=0, quantity=0, description=string, isPopular=true, ca (truncated)...]
+2024-12-09T15:09:50.345+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.example.moreman.exception.AppExceptionHandler#handleGenericException(Exception)
+2024-12-09T15:09:50.377+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T15:09:50.386+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse[httpStatus=500 INTERNAL_SERVER_ERROR, exceptionClassName=RuntimeException, message (truncated)...]
+2024-12-09T15:09:50.401+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Category with this ID is not found]
+2024-12-09T15:09:50.401+06:00 DEBUG 45592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-09T15:10:16.291+06:00  INFO 45592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:10:16.311+06:00  INFO 45592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T15:10:45.881+06:00  INFO 39540 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 39540 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T15:10:45.893+06:00  INFO 39540 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T15:10:47.869+06:00  INFO 39540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T15:10:47.869+06:00  INFO 39540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T15:10:47.869+06:00  INFO 39540 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T15:10:47.939+06:00  INFO 39540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T15:10:47.939+06:00  INFO 39540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1986 ms
+2024-12-09T15:10:48.160+06:00  INFO 39540 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T15:10:48.160+06:00  INFO 39540 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T15:10:48.160+06:00  INFO 39540 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T15:10:48.160+06:00  INFO 39540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T15:10:48.328+06:00  INFO 39540 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1216eb3f
+2024-12-09T15:10:48.328+06:00  INFO 39540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T15:10:48.336+06:00  INFO 39540 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T15:10:48.368+06:00  INFO 39540 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.015s)
+2024-12-09T15:10:48.431+06:00  INFO 39540 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T15:10:48.432+06:00 ERROR 39540 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T15:10:48.434+06:00  INFO 39540 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T15:10:49.056+06:00 DEBUG 39540 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T15:10:49.351+06:00 DEBUG 39540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T15:10:49.414+06:00 DEBUG 39540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T15:10:49.445+06:00  INFO 39540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2fea9a7b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2aa07d80, org.springframework.security.web.context.SecurityContextHolderFilter@34bf66af, org.springframework.security.web.header.HeaderWriterFilter@5eee3da9, org.springframework.web.filter.CorsFilter@75d97e18, org.springframework.security.web.authentication.logout.LogoutFilter@3dfc59c5, org.example.moreman.config.JwtAuthenticationFilter@1c92a549, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dec79f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bf7f15f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69c1ea07, org.springframework.security.web.session.SessionManagementFilter@7eefaca0, org.springframework.security.web.access.ExceptionTranslationFilter@bb6869a, org.springframework.security.web.access.intercept.AuthorizationFilter@12e2f5ab]
+2024-12-09T15:10:49.522+06:00 DEBUG 39540 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T15:10:49.579+06:00 DEBUG 39540 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T15:10:49.848+06:00  INFO 39540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T15:10:49.865+06:00  INFO 39540 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.572 seconds (process running for 5.331)
+2024-12-09T15:10:59.058+06:00  INFO 39540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T15:10:59.058+06:00  INFO 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T15:10:59.058+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T15:10:59.058+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T15:10:59.058+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T15:10:59.058+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1bf92b58
+2024-12-09T15:10:59.058+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a5994cd
+2024-12-09T15:10:59.058+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T15:10:59.058+06:00  INFO 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-09T15:11:00.081+06:00  INFO 39540 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T15:11:00.081+06:00  INFO 39540 --- [http-nio-8080-exec-1] org.jooq.Constants                       : 
+
+jOOQ tip of the day: The jOOQ code generator can generate code from an XML representation of your schema: https://www.jooq.org/doc/latest/manual/code-generation/codegen-xml/
+
+2024-12-09T15:11:00.682+06:00  INFO 39540 --- [http-nio-8080-exec-1] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T15:11:00.798+06:00  WARN 39540 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/products' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T15:11:00.831+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/products", parameters={}
+2024-12-09T15:11:00.831+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.ProductController#createProduct(ProductRecord)
+2024-12-09T15:11:00.899+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ProductRecord[name=string, image=string, price=0, quantity=0, description=string, isPopular=true, ca (truncated)...]
+2024-12-09T15:11:00.980+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.example.moreman.exception.AppExceptionHandler#handleNotFoundException(NotFoundException)
+2024-12-09T15:11:00.998+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T15:11:01.001+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [ExceptionResponse[httpStatus=404 NOT_FOUND, exceptionClassName=NotFoundException, message=Category w (truncated)...]
+2024-12-09T15:11:01.020+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.example.moreman.exception.NotFoundException: Category with this ID is not found]
+2024-12-09T15:11:01.020+06:00 DEBUG 39540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-12-09T15:19:42.722+06:00  INFO 39540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:19:42.741+06:00  INFO 39540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T15:20:17.090+06:00  INFO 46248 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 46248 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T15:20:17.091+06:00  INFO 46248 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T15:20:18.922+06:00  INFO 46248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T15:20:18.937+06:00  INFO 46248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T15:20:18.937+06:00  INFO 46248 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T15:20:19.017+06:00  INFO 46248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T15:20:19.017+06:00  INFO 46248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1861 ms
+2024-12-09T15:20:19.176+06:00  INFO 46248 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T15:20:19.192+06:00  INFO 46248 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T15:20:19.192+06:00  INFO 46248 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T15:20:19.192+06:00  INFO 46248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T15:20:19.349+06:00  INFO 46248 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@250967f1
+2024-12-09T15:20:19.349+06:00  INFO 46248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T15:20:19.366+06:00  INFO 46248 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T15:20:19.392+06:00  INFO 46248 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
+2024-12-09T15:20:19.444+06:00  INFO 46248 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T15:20:19.444+06:00 ERROR 46248 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T15:20:19.444+06:00  INFO 46248 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T15:20:20.061+06:00 DEBUG 46248 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T15:20:20.335+06:00 DEBUG 46248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T15:20:20.398+06:00 DEBUG 46248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T15:20:20.429+06:00  INFO 46248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c3710b3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8b1202a, org.springframework.security.web.context.SecurityContextHolderFilter@4bc21e34, org.springframework.security.web.header.HeaderWriterFilter@3e2772a9, org.springframework.web.filter.CorsFilter@67a0ff25, org.springframework.security.web.authentication.logout.LogoutFilter@3dec79f8, org.example.moreman.config.JwtAuthenticationFilter@30358dc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bb6869a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@506b083, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34bddf43, org.springframework.security.web.session.SessionManagementFilter@2932e15f, org.springframework.security.web.access.ExceptionTranslationFilter@79445efb, org.springframework.security.web.access.intercept.AuthorizationFilter@1e194966]
+2024-12-09T15:20:20.525+06:00 DEBUG 46248 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T15:20:20.556+06:00 DEBUG 46248 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T15:20:20.823+06:00  INFO 46248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T15:20:20.823+06:00  INFO 46248 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.265 seconds (process running for 5.477)
+2024-12-09T15:20:28.028+06:00  INFO 46248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T15:20:28.028+06:00  INFO 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T15:20:28.028+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T15:20:28.028+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T15:20:28.028+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T15:20:28.028+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@71950255
+2024-12-09T15:20:28.028+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@a3be2
+2024-12-09T15:20:28.028+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T15:20:28.028+06:00  INFO 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-09T15:20:28.044+06:00  WARN 46248 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T15:20:28.059+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-12-09T15:20:28.059+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.075+06:00 DEBUG 46248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.109+06:00 DEBUG 46248 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.112+06:00 DEBUG 46248 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.113+06:00 DEBUG 46248 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-12-09T15:20:28.113+06:00 DEBUG 46248 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.114+06:00 DEBUG 46248 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.116+06:00 DEBUG 46248 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.129+06:00 DEBUG 46248 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.136+06:00 DEBUG 46248 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.141+06:00 DEBUG 46248 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.261+06:00 DEBUG 46248 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-12-09T15:20:28.261+06:00 DEBUG 46248 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-12-09T15:20:28.261+06:00 DEBUG 46248 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-12-09T15:20:28.261+06:00 DEBUG 46248 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:20:28.261+06:00 DEBUG 46248 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.271+06:00 DEBUG 46248 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-09T15:20:28.279+06:00 DEBUG 46248 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2024-12-09T15:20:28.279+06:00 DEBUG 46248 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:20:28.307+06:00 DEBUG 46248 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-12-09T15:20:28.307+06:00 DEBUG 46248 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-12-09T15:20:28.661+06:00  INFO 46248 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 349 ms
+2024-12-09T15:20:28.678+06:00 DEBUG 46248 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-12-09T15:20:28.678+06:00 DEBUG 46248 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-12-09T15:20:28.678+06:00 DEBUG 46248 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:23:56.919+06:00  INFO 46248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:23:56.935+06:00  INFO 46248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T15:24:59.094+06:00  INFO 46056 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 46056 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T15:24:59.094+06:00  INFO 46056 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T15:25:01.190+06:00  INFO 46056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T15:25:01.190+06:00  INFO 46056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T15:25:01.190+06:00  INFO 46056 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T15:25:01.248+06:00  INFO 46056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T15:25:01.248+06:00  INFO 46056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2100 ms
+2024-12-09T15:25:01.422+06:00  INFO 46056 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T15:25:01.422+06:00  INFO 46056 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T15:25:01.422+06:00  INFO 46056 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T15:25:01.438+06:00  INFO 46056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T15:25:01.594+06:00  INFO 46056 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@274fdea6
+2024-12-09T15:25:01.594+06:00  INFO 46056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T15:25:01.609+06:00  INFO 46056 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T15:25:01.645+06:00  INFO 46056 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
+2024-12-09T15:25:01.697+06:00  INFO 46056 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T15:25:01.697+06:00 ERROR 46056 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T15:25:01.705+06:00  INFO 46056 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T15:25:02.356+06:00 DEBUG 46056 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T15:25:02.631+06:00 DEBUG 46056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T15:25:02.710+06:00 DEBUG 46056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T15:25:02.734+06:00  INFO 46056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23708f14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dfc59c5, org.springframework.security.web.context.SecurityContextHolderFilter@5c1dd18, org.springframework.security.web.header.HeaderWriterFilter@41e7a544, org.springframework.web.filter.CorsFilter@37bda983, org.springframework.security.web.authentication.logout.LogoutFilter@395eb363, org.example.moreman.config.JwtAuthenticationFilter@4f402027, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5178345d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b2d58e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cff5aa3, org.springframework.security.web.session.SessionManagementFilter@5eee3da9, org.springframework.security.web.access.ExceptionTranslationFilter@117fb9ba, org.springframework.security.web.access.intercept.AuthorizationFilter@3355b8ff]
+2024-12-09T15:25:02.813+06:00 DEBUG 46056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T15:25:02.846+06:00 DEBUG 46056 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T15:25:03.094+06:00  INFO 46056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T15:25:03.110+06:00  INFO 46056 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.594 seconds (process running for 5.326)
+2024-12-09T15:25:06.590+06:00  INFO 46056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T15:25:06.590+06:00  INFO 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T15:25:06.590+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T15:25:06.590+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T15:25:06.590+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T15:25:06.590+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4888f89b
+2024-12-09T15:25:06.590+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@65197ab4
+2024-12-09T15:25:06.590+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T15:25:06.605+06:00  INFO 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-09T15:25:06.605+06:00  WARN 46056 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T15:25:06.628+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-12-09T15:25:06.628+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.644+06:00 DEBUG 46056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.681+06:00 DEBUG 46056 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-12-09T15:25:06.681+06:00 DEBUG 46056 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-12-09T15:25:06.683+06:00 DEBUG 46056 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.685+06:00 DEBUG 46056 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.685+06:00 DEBUG 46056 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.689+06:00 DEBUG 46056 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.693+06:00 DEBUG 46056 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.706+06:00 DEBUG 46056 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.706+06:00 DEBUG 46056 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.829+06:00 DEBUG 46056 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-12-09T15:25:06.829+06:00 DEBUG 46056 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-12-09T15:25:06.829+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-12-09T15:25:06.829+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-12-09T15:25:06.829+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.844+06:00 DEBUG 46056 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-09T15:25:06.844+06:00 DEBUG 46056 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2024-12-09T15:25:06.844+06:00 DEBUG 46056 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:06.871+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-12-09T15:25:06.871+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-12-09T15:25:07.214+06:00  INFO 46056 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 332 ms
+2024-12-09T15:25:07.227+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-12-09T15:25:07.227+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-12-09T15:25:07.227+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:38.218+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/sign-in", parameters={}
+2024-12-09T15:25:38.218+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.AuthenticationController#signIn(SignIn)
+2024-12-09T15:25:38.244+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignIn[email=string, password=string]]
+2024-12-09T15:25:39.039+06:00  INFO 46056 --- [http-nio-8080-exec-8] org.jooq.Constants                       : 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.18.2
+                                      
+2024-12-09T15:25:39.039+06:00  INFO 46056 --- [http-nio-8080-exec-8] org.jooq.Constants                       : 
+
+jOOQ tip of the day: You can nest collections directly in SQL using jOOQ's SQL/XML or SQL/JSON support: https://blog.jooq.org/nesting-collections-with-jooq-3-14s-sql-xml-or-sql-json-support/
+
+2024-12-09T15:25:39.939+06:00  INFO 46056 --- [http-nio-8080-exec-8] o.j.i.D.logVersionSupport                : Version                  : Database version is supported by dialect POSTGRES: 15.4
+2024-12-09T15:25:41.223+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T15:25:41.240+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Authentication[id=1, email=string, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdHJpbmciLCJpYXQiOjE3MzM3Mz (truncated)...]
+2024-12-09T15:25:41.240+06:00 DEBUG 46056 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-09T15:25:56.229+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/orders/createOrder", parameters={}
+2024-12-09T15:25:56.230+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.moreman.controller.OrderController#createOrder(List)
+2024-12-09T15:25:56.230+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [[OrderRecord[productId=1, quantity=2], OrderRecord[productId=1, quantity=2], OrderRecord[productId=1 (truncated)...]
+2024-12-09T15:25:56.329+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-09T15:25:56.329+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[OrderResponse[orderId=6, productId=1, quantity=2, localDateTime=2024-12-09T15:25:56.279835], OrderR (truncated)...]
+2024-12-09T15:25:56.346+06:00 DEBUG 46056 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-12-09T15:37:39.536+06:00  INFO 46056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:37:39.536+06:00  INFO 46056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T15:38:29.870+06:00  INFO 44304 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 44304 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T15:38:29.870+06:00  INFO 44304 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T15:38:31.324+06:00  INFO 44304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T15:38:31.324+06:00  INFO 44304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T15:38:31.324+06:00  INFO 44304 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T15:38:31.402+06:00  INFO 44304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T15:38:31.402+06:00  INFO 44304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1464 ms
+2024-12-09T15:38:31.569+06:00  INFO 44304 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T15:38:31.569+06:00  INFO 44304 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T15:38:31.569+06:00  INFO 44304 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T15:38:31.585+06:00  INFO 44304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T15:38:31.733+06:00  INFO 44304 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@681de87f
+2024-12-09T15:38:31.733+06:00  INFO 44304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T15:38:31.758+06:00  INFO 44304 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T15:38:31.801+06:00  INFO 44304 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.024s)
+2024-12-09T15:38:31.872+06:00  INFO 44304 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T15:38:31.873+06:00 ERROR 44304 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T15:38:31.878+06:00  INFO 44304 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T15:38:32.577+06:00 DEBUG 44304 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T15:38:32.883+06:00 DEBUG 44304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T15:38:32.946+06:00 DEBUG 44304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T15:38:32.978+06:00  INFO 44304 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33eab2e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34bf66af, org.springframework.security.web.context.SecurityContextHolderFilter@4449b273, org.springframework.security.web.header.HeaderWriterFilter@5034681f, org.springframework.web.filter.CorsFilter@13a268cd, org.springframework.security.web.authentication.logout.LogoutFilter@5c1dd18, org.example.moreman.config.JwtAuthenticationFilter@27dc335a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d9bd1d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18ac4af6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37364634, org.springframework.security.web.session.SessionManagementFilter@79445efb, org.springframework.security.web.access.ExceptionTranslationFilter@570ed9c, org.springframework.security.web.access.intercept.AuthorizationFilter@3dd750ba]
+2024-12-09T15:38:33.092+06:00 DEBUG 44304 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T15:38:33.125+06:00 DEBUG 44304 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T15:38:33.435+06:00  INFO 44304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T15:38:33.448+06:00  INFO 44304 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 4.58 seconds (process running for 6.377)
+2024-12-09T15:38:44.941+06:00  INFO 44304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T15:38:44.941+06:00  INFO 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T15:38:44.950+06:00 DEBUG 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T15:38:44.950+06:00 DEBUG 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T15:38:44.950+06:00 DEBUG 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T15:38:44.950+06:00 DEBUG 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3817f49c
+2024-12-09T15:38:44.950+06:00 DEBUG 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@206ae6b8
+2024-12-09T15:38:44.950+06:00 DEBUG 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T15:38:44.950+06:00  INFO 44304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2024-12-09T15:38:44.991+06:00  WARN 44304 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/orders/createOrder' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T15:41:50.091+06:00  INFO 44304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:41:50.099+06:00  INFO 44304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-09T15:42:23.668+06:00  INFO 46824 --- [main] org.example.moreman.MoremanApplication   : Starting MoremanApplication using Java 17.0.13 with PID 46824 (C:\Users\admin\IdeaProjects\Moreman\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Moreman)
+2024-12-09T15:42:23.679+06:00  INFO 46824 --- [main] org.example.moreman.MoremanApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-09T15:42:26.211+06:00  INFO 46824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-09T15:42:26.221+06:00  INFO 46824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-09T15:42:26.221+06:00  INFO 46824 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-12-09T15:42:26.288+06:00  INFO 46824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-09T15:42:26.288+06:00  INFO 46824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2389 ms
+2024-12-09T15:42:26.455+06:00  INFO 46824 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : Flyway OSS Edition 10.4.0 by Redgate
+2024-12-09T15:42:26.456+06:00  INFO 46824 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : 
+2024-12-09T15:42:26.456+06:00  INFO 46824 --- [main] o.f.c.i.s.classpath.ClassPathScanner     : See release notes here: https://rd.gt/416ObMi
+2024-12-09T15:42:26.467+06:00  INFO 46824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-09T15:42:26.611+06:00  INFO 46824 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25c1f5ee
+2024-12-09T15:42:26.613+06:00  INFO 46824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-09T15:42:26.635+06:00  INFO 46824 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/postgres (PostgreSQL 15.4)
+2024-12-09T15:42:26.667+06:00  INFO 46824 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.018s)
+2024-12-09T15:42:26.729+06:00  INFO 46824 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2024-12-09T15:42:26.729+06:00 ERROR 46824 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" has version 1, but no migration could be resolved in the configured locations !
+2024-12-09T15:42:26.733+06:00  INFO 46824 --- [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2024-12-09T15:42:27.330+06:00 DEBUG 46824 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-12-09T15:42:27.611+06:00 DEBUG 46824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-12-09T15:42:27.688+06:00 DEBUG 46824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-12-09T15:42:27.716+06:00  INFO 46824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b6136eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cce10bc, org.springframework.security.web.context.SecurityContextHolderFilter@27b490de, org.springframework.security.web.header.HeaderWriterFilter@3d98729a, org.springframework.web.filter.CorsFilter@55e91e61, org.springframework.security.web.csrf.CsrfFilter@237aa0c7, org.springframework.security.web.authentication.logout.LogoutFilter@103e7c7c, org.example.moreman.config.JwtAuthenticationFilter@7fac18dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dd750ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7eefaca0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73234691, org.springframework.security.web.session.SessionManagementFilter@7b2d58e6, org.springframework.security.web.access.ExceptionTranslationFilter@2739ecc0, org.springframework.security.web.access.intercept.AuthorizationFilter@23708f14]
+2024-12-09T15:42:27.790+06:00 DEBUG 46824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-09T15:42:27.819+06:00 DEBUG 46824 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-09T15:42:28.076+06:00  INFO 46824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-12-09T15:42:28.084+06:00  INFO 46824 --- [main] org.example.moreman.MoremanApplication   : Started MoremanApplication in 5.385 seconds (process running for 6.846)
+2024-12-09T15:42:34.536+06:00  INFO 46824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-09T15:42:34.536+06:00  INFO 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-09T15:42:34.536+06:00 DEBUG 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-09T15:42:34.536+06:00 DEBUG 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-09T15:42:34.536+06:00 DEBUG 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-09T15:42:34.537+06:00 DEBUG 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@67ba3d1e
+2024-12-09T15:42:34.538+06:00 DEBUG 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@18c56929
+2024-12-09T15:42:34.538+06:00 DEBUG 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-09T15:42:34.538+06:00  INFO 46824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-09T15:42:34.553+06:00  WARN 46824 --- [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/products/getByCategoryId' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-12-09T15:43:30.805+06:00  INFO 46824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-09T15:43:30.811+06:00  INFO 46824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

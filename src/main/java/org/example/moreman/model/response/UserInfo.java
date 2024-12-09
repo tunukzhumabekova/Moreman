@@ -1,6 +1,7 @@
-package com.ORT.model.response;
+package org.example.moreman.model.response;
 
-import com.databil.mentormind.public_.enums.Role;
+
+import com.agro.public_.enums.Role;
 
 public record UserInfo(
         Integer id,

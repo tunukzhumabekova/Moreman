@@ -1,4 +1,4 @@
-package com.ORT.config;
+package org.example.moreman.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

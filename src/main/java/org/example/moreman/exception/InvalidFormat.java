@@ -1,4 +1,4 @@
-package com.ORT.exception;
+package org.example.moreman.exception;
 
 public class InvalidFormat extends RuntimeException {
     public InvalidFormat(String message) {

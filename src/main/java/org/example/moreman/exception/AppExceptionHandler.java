@@ -1,6 +1,5 @@
-package com.ORT.exception;
+package org.example.moreman.exception;
 
-import jakarta.mail.MessagingException;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -95,16 +94,6 @@ public class AppExceptionHandler {
     public ExceptionResponse handleGenericException(InvalidFormat e) {
         return ExceptionResponse.builder()
                 .httpStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-                .exceptionClassName(e.getClass().getSimpleName())
-                .message(e.getMessage())
-                .build();
-    }
-
-    @ExceptionHandler(MessagingException.class)
-    @ResponseStatus(HttpStatus.SERVICE_UNAVAILABLE)
-    public ExceptionResponse handleGenericException(MessagingException e) {
-        return ExceptionResponse.builder()
-                .httpStatus(HttpStatus.SERVICE_UNAVAILABLE)
                 .exceptionClassName(e.getClass().getSimpleName())
                 .message(e.getMessage())
                 .build();

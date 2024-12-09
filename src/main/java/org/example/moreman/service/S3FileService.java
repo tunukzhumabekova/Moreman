@@ -1,4 +1,4 @@
-package com.ORT.service;
+package org.example.moreman.service;
 
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.ResponseEntity;

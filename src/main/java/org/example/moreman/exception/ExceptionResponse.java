@@ -1,4 +1,4 @@
-package com.ORT.exception;
+package org.example.moreman.exception;
 
 import lombok.Getter;
 import lombok.Setter;
