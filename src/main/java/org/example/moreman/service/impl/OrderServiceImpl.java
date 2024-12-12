@@ -6,6 +6,7 @@ import org.example.moreman.repository.OrderRepository;
 import org.example.moreman.service.OrderService;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -19,5 +20,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public List<OrderResponse> createOrder(List<OrderRecord> orderRecord) {
         return orderRepository.createOrders(orderRecord);
+    }
+
+    @Override
+    public List<OrderResponse> getOrdersByDateRange(LocalDate startDate, LocalDate endDate) {
+        return orderRepository.getOrdersByDateRange(startDate, endDate);
     }
 }

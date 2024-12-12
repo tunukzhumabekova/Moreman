@@ -19,7 +19,7 @@ import java.util.Collections;
             return new OpenAPI()
                     .components(new Components()
                             .addSecuritySchemes(API_KEY, apiKeySecuritySchema()))
-                    .info(new Info().title("ORT"))
+                    .info(new Info().title("Moreman"))
                     .security(Collections.singletonList(new SecurityRequirement().addList(API_KEY)));
         }
         public SecurityScheme apiKeySecuritySchema() {

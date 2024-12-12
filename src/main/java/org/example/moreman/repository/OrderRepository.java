@@ -7,6 +7,7 @@ import org.example.moreman.model.response.OrderResponse;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -41,6 +42,20 @@ public class OrderRepository {
                             record.getDate()
                     );
                 })
+                .collect(Collectors.toList());
+    }
+    public List<OrderResponse> getOrdersByDateRange(LocalDate startDate, LocalDate endDate) {
+        List<OrderResponse> ordersRecords = dslContext.selectFrom(Orders.ORDERS)
+                .where(Orders.ORDERS.DATE.between(startDate.atStartOfDay(), endDate.plusDays(1).atStartOfDay()))
+                .fetchInto(OrderResponse.class);
+
+        return ordersRecords.stream()
+                .map(record -> new OrderResponse(
+                        record.orderId(),
+                        record.productId(),
+                        record.quantity(),
+                        record.localDateTime()
+                ))
                 .collect(Collectors.toList());
     }
 }

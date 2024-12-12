@@ -1,6 +1,7 @@
 package org.example.moreman.controller;
 
 import org.example.moreman.model.request.ProductRecord;
+import org.example.moreman.model.request.ProductResponse;
 import org.example.moreman.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,20 +19,20 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<List<ProductRecord>> getAllProducts() {
-        List<ProductRecord> products = productService.getAllProducts();
+    public ResponseEntity<List<ProductResponse>> getAllProducts() {
+        List<ProductResponse> products = productService.getAllProducts();
         return ResponseEntity.ok(products);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductRecord> getProductById(@PathVariable Long id) {
-        ProductRecord product = productService.getProductById(id);
+    public ResponseEntity<ProductResponse> getProductById(@PathVariable Long id) {
+        ProductResponse product = productService.getProductById(id);
         return ResponseEntity.ok(product);
     }
 
     @PostMapping
-    public ResponseEntity<ProductRecord> createProduct(@RequestBody ProductRecord productRecord) {
-        ProductRecord createdProduct = productService.createProduct(productRecord);
+    public ResponseEntity<ProductResponse> createProduct(@RequestBody ProductRecord productRecord) {
+        ProductResponse createdProduct = productService.createProduct(productRecord);
         return ResponseEntity.ok(createdProduct);
     }
 
@@ -46,7 +47,7 @@ public class ProductController {
     }
 
     @GetMapping("/getByCategoryId")
-    public List<ProductRecord> getProductsByCategoryId(int categoryId) {
+    public List<ProductResponse> getProductsByCategoryId(int categoryId) {
         return productService.getProductsByCategoryId(categoryId);
     }
 }

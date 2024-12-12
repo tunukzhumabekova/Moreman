@@ -3,6 +3,7 @@ package org.example.moreman.repository;
 import com.agro.public_.tables.Products;
 import com.agro.public_.tables.records.ProductsRecord;
 import org.example.moreman.model.request.ProductRecord;
+import org.example.moreman.model.request.ProductResponse;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 
@@ -20,10 +21,11 @@ public class ProductRepository {
         this.dsl = dsl;
     }
 
-    public List<ProductRecord> getAllProducts() {
+    public List<ProductResponse> getAllProducts() {
         return dsl.selectFrom(PRODUCTS)
                 .fetch()
-                .map(record -> new ProductRecord(
+                .map(record -> new ProductResponse(
+                        record.get(PRODUCTS.ID),
                         record.get(PRODUCTS.NAME),
                         record.get(PRODUCTS.IMAGE),
                         record.get(PRODUCTS.PRICE),
@@ -35,13 +37,14 @@ public class ProductRepository {
     }
 
 
-    public ProductRecord getProductById(Long id) {
+    public ProductResponse getProductById(Long id) {
         ProductsRecord result = dsl.selectFrom(PRODUCTS)
                 .where(PRODUCTS.ID.eq(Math.toIntExact(id)))
                 .fetchOne();
 
         if (result != null) {
-            return new ProductRecord(
+            return new ProductResponse(
+                    result.get(PRODUCTS.ID),
                     result.get(PRODUCTS.NAME),
                     result.get(PRODUCTS.IMAGE),
                     result.get(PRODUCTS.PRICE),
@@ -56,7 +59,7 @@ public class ProductRepository {
     }
 
 
-    public ProductRecord createProduct(ProductRecord productRecord) {
+    public ProductResponse createProduct(ProductRecord productRecord) {
         ProductsRecord result = dsl.insertInto(PRODUCTS)
                 .set(PRODUCTS.NAME, productRecord.name())
                 .set(PRODUCTS.IMAGE, productRecord.image())
@@ -69,7 +72,8 @@ public class ProductRepository {
                 .fetchOne();
 
         if (result != null) {
-            return new ProductRecord(
+            return new ProductResponse(
+                    result.getId(),
                     result.getName(),
                     result.getImage(),
                     result.getPrice(),
@@ -100,7 +104,7 @@ public class ProductRepository {
                 .where(Products.PRODUCTS.ID.eq(Math.toIntExact(id)))
                 .execute();
     }
-    public List<ProductRecord> getProductsByCategoryId(int categoryId) {
+    public List<ProductResponse> getProductsByCategoryId(int categoryId) {
         List<ProductsRecord> results = dsl.selectFrom(PRODUCTS)
                 .where(PRODUCTS.CATEGORY_ID.eq(categoryId))
                 .fetch();
@@ -109,8 +113,9 @@ public class ProductRepository {
             return Collections.emptyList();
         }
 
-        List<ProductRecord> productRecords = results.stream()
-                .map(result -> new ProductRecord(
+        List<ProductResponse> productRecords = results.stream()
+                .map(result -> new ProductResponse(
+                        result.getId(),
                         result.getName(),
                         result.getImage(),
                         result.getPrice(),

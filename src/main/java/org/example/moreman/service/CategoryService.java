@@ -10,11 +10,11 @@ import java.util.List;
 public interface CategoryService {
     List<CategoryRecord> getAllCategories();
 
-    CategoryRecord getCategoryById(Long id);
+    CategoryRecord getCategoryById(Integer id);
 
     CategoryRecord createCategory(String name, String image);
 
-    public void updateCategory(Long id, String name, String image);
+    public void updateCategory(Integer id, String name, String image);
 
-    public void deleteCategory(Long id);
+    public void deleteCategory(Integer id);
 }

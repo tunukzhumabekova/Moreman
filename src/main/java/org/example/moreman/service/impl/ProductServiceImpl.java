@@ -2,6 +2,7 @@ package org.example.moreman.service.impl;
 
 import org.example.moreman.exception.NotFoundException;
 import org.example.moreman.model.request.ProductRecord;
+import org.example.moreman.model.request.ProductResponse;
 import org.example.moreman.repository.CategoryRepository;
 import org.example.moreman.repository.ProductRepository;
 import org.example.moreman.service.ProductService;
@@ -20,17 +21,17 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<ProductRecord> getAllProducts() {
-        return productRepository.getAllProducts();
+    public List<ProductResponse> getAllProducts() {
+     return productRepository.getAllProducts();
     }
 
     @Override
-    public ProductRecord getProductById(Long id) {
+    public ProductResponse getProductById(Long id) {
         return productRepository.getProductById(id);
     }
 
     @Override
-    public ProductRecord createProduct(ProductRecord productRecord) {
+    public ProductResponse createProduct(ProductRecord productRecord) {
         if (!categoryRepository.existByCategory(productRecord.categoryId())) {
             throw new NotFoundException("Category with this ID is not found");
         }
@@ -49,7 +50,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<ProductRecord> getProductsByCategoryId(int categoryId) {
+    public List<ProductResponse> getProductsByCategoryId(int categoryId) {
         return productRepository.getProductsByCategoryId(categoryId);
     }
 }

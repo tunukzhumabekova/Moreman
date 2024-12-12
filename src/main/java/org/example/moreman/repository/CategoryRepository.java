@@ -20,7 +20,7 @@ public class CategoryRepository {
         return dsl.selectFrom(Category.CATEGORY).fetchInto(CategoryRecord.class);
     }
 
-    public CategoryRecord getCategoryById(Long id) {
+    public CategoryRecord getCategoryById(Integer id) {
         return dsl.selectFrom(Category.CATEGORY)
                 .where(Category.CATEGORY.ID.eq(Math.toIntExact(id)))
                 .fetchOneInto(CategoryRecord.class);
@@ -38,14 +38,14 @@ public class CategoryRepository {
             // Construct and return the CategoryRecord
             return new CategoryRecord(
                     result.id(),
-                    result.name(),
-                    result.image()
-            );
+                    result.image(),
+                    result.name()
+                    );
         }
 
         throw new RuntimeException("Failed to create category");
     }
-    public void updateCategory(Long id, String name, String image) {
+    public void updateCategory(Integer id, String name, String image) {
         dsl.update(Category.CATEGORY)
                 .set(Category.CATEGORY.NAME, name)
                 .set(Category.CATEGORY.IMAGE, image)
@@ -53,7 +53,7 @@ public class CategoryRepository {
                 .execute();
     }
 
-    public void deleteCategory(Long id) {
+    public void deleteCategory(Integer id) {
         dsl.deleteFrom(Category.CATEGORY)
                 .where(Category.CATEGORY.ID.eq(Math.toIntExact(id)))
                 .execute();

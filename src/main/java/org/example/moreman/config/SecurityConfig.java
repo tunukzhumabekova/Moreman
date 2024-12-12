@@ -35,7 +35,8 @@ public class SecurityConfig {
             "/swagger-ui.html",
             "/s3/image/**",
             "/health",
-            "/health/**"};
+            "/health/**",
+            "/products/getByCategoryId/**"};
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final AuthenticationProvider authenticationProvider;
 
@@ -69,11 +70,11 @@ public class SecurityConfig {
                         configurer.authenticationEntryPoint(
                                         (request, response, exception) -> {
                                             response.setStatus(
-                                                    HttpStatus.UNAUTHORIZED
+                                                    HttpStatus.NOT_FOUND
                                                             .value()
                                             );
                                             response.getWriter()
-                                                    .write("Unauthorized.");
+                                                    .write("Unauthorized");
                                         })
                                 .accessDeniedHandler(
                                         (request, response, exception) -> {

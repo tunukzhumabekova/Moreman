@@ -22,22 +22,22 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public CategoryRecord getCategoryById(Long id) {
+    public CategoryRecord getCategoryById(Integer id) {
         return categoryRepository.getCategoryById(id);
     }
 
     @Override
     public CategoryRecord createCategory(String name, String image) {
-       return categoryRepository.createCategory(name, image);
+        return categoryRepository.createCategory(name, image);
     }
 
     @Override
-    public void updateCategory(Long id, String name, String image) {
+    public void updateCategory(Integer id, String name, String image) {
         categoryRepository.updateCategory(id, name, image);
     }
 
     @Override
-    public void deleteCategory(Long id) {
+    public void deleteCategory(Integer id) {
         categoryRepository.deleteCategory(id);
     }
 }

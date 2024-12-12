@@ -1,17 +1,18 @@
 package org.example.moreman.service;
 
 import org.example.moreman.model.request.ProductRecord;
+import org.example.moreman.model.request.ProductResponse;
 
 import java.util.List;
 
 
 public interface ProductService {
-     List<ProductRecord> getAllProducts() ;
-    ProductRecord getProductById(Long id);
-    ProductRecord createProduct(ProductRecord productRecord);
+     List<ProductResponse> getAllProducts() ;
+    ProductResponse getProductById(Long id);
+    ProductResponse createProduct(ProductRecord productRecord);
     void updateProduct(ProductRecord productRecord,long id);
     void deleteProduct(long id);
-     List<ProductRecord> getProductsByCategoryId(int categoryId) ;
+     List<ProductResponse> getProductsByCategoryId(int categoryId) ;
 
 
 }
