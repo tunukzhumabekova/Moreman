@@ -38,7 +38,6 @@ public class ApplicationConfig {
                 return User.builder()
                         .username(userInfo.email())
                         .password(userInfo.password())
-                        .roles(userInfo.role().toString())
                         .build();
             }
         };

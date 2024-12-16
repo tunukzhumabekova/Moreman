@@ -2,6 +2,7 @@ package org.example.moreman.service.impl;
 
 import org.example.moreman.model.request.OrderRecord;
 import org.example.moreman.model.response.OrderResponse;
+import org.example.moreman.model.response.OrderResponseToGet;
 import org.example.moreman.repository.OrderRepository;
 import org.example.moreman.service.OrderService;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public List<OrderResponse> getOrdersByDateRange(LocalDate startDate, LocalDate endDate) {
+    public List<OrderResponseToGet> getOrdersByDateRange(LocalDate startDate, LocalDate endDate) {
         return orderRepository.getOrdersByDateRange(startDate, endDate);
     }
 }

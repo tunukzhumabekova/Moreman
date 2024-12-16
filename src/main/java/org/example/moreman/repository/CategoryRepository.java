@@ -27,7 +27,6 @@ public class CategoryRepository {
     }
 
     public CategoryRecord createCategory(String name, String image) {
-        // Insert the new category and return the generated ID
         CategoryRecord result = dsl.insertInto(CATEGORY)
                 .set(CATEGORY.NAME, name)
                 .set(CATEGORY.IMAGE, image)
@@ -35,7 +34,6 @@ public class CategoryRepository {
                 .fetchOneInto(CategoryRecord.class);
 
         if (result != null) {
-            // Construct and return the CategoryRecord
             return new CategoryRecord(
                     result.id(),
                     result.image(),
@@ -59,7 +57,6 @@ public class CategoryRepository {
                 .execute();
     }
     public boolean existByCategory(Integer categoryId) {
-        // Query the database to check if the category exists
         return dsl.fetchExists(
                 dsl.selectFrom(Category.CATEGORY)
                         .where(Category.CATEGORY.ID.eq(categoryId))

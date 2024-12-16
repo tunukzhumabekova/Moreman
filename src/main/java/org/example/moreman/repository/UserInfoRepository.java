@@ -1,9 +1,8 @@
 package org.example.moreman.repository;
 import com.agro.public_.tables.records.UserInfosRecord;
-import com.agro.public_.tables.records.UsersRecord;
+
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
-import static com.agro.public_.Tables.USERS;
 import static com.agro.public_.Tables.USER_INFOS;
 
 @Repository

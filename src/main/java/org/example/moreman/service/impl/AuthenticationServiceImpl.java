@@ -1,7 +1,6 @@
 package org.example.moreman.service.impl;
 
 import com.agro.public_.tables.records.UserInfosRecord;
-import com.agro.public_.tables.records.UsersRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.example.moreman.config.JwtService;
 import org.example.moreman.exception.AuthenticationException;
@@ -37,19 +36,16 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         UserInfosRecord userInfo = userInfoRepository.findByEmail(signIn.email());
 
         if (userInfo == null) {
-         //   log.error("User not found with email: {}", signIn.email());
             throw new AuthenticationException("User not found");
         }
 
         if (!passwordEncoder.matches(signIn.password(), userInfo.getPassword())) {
-         //   log.error("Invalid password for user: {}", signIn.email());
             throw new AuthenticationException("Invalid password");
         }
 
-        UsersRecord user = userRepository.findByUserInfoId(userInfo.getId());
+        UserInfosRecord user = userRepository.findByUserInfoId(userInfo.getId());
 
         if (user == null) {
-         //   log.error("No user found for userInfoId: {}", userInfo.getId());
             throw new AuthenticationException("No user record found for the given user info");
         }
 
@@ -57,7 +53,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         return new Authentication(
                 user.getId(),
                 userInfo.getEmail(),
-                jwtToken,
-                userInfo.getRole());
+                jwtToken);
     }
 }

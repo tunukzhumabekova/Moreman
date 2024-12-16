@@ -36,7 +36,11 @@ public class SecurityConfig {
             "/s3/image/**",
             "/health",
             "/health/**",
-            "/products/getByCategoryId/**"};
+            "/s3/image/{fileName}/**",
+            "/orders/**",
+            "/products/**",
+            "/categories/**",
+    };
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final AuthenticationProvider authenticationProvider;
 

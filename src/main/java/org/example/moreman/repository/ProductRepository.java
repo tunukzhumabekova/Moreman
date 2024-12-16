@@ -2,6 +2,7 @@ package org.example.moreman.repository;
 
 import com.agro.public_.tables.Products;
 import com.agro.public_.tables.records.ProductsRecord;
+import org.example.moreman.exception.NotFoundException;
 import org.example.moreman.model.request.ProductRecord;
 import org.example.moreman.model.request.ProductResponse;
 import org.jooq.DSLContext;
@@ -55,7 +56,7 @@ public class ProductRepository {
             );
         }
 
-        throw new RuntimeException("Product not found with ID: " + id);
+        throw new NotFoundException("Product not found with ID: " + id);
     }
 
 
@@ -84,12 +85,13 @@ public class ProductRepository {
             );
         }
 
-        throw new RuntimeException("Failed to create product");
+        throw new NotFoundException("Failed to create product");
     }
 
     public void updateProduct(ProductRecord productsRecord,long id) {
         dsl.update(Products.PRODUCTS)
                 .set(Products.PRODUCTS.NAME, productsRecord.name())
+                .set(Products.PRODUCTS.IMAGE, productsRecord.image())
                 .set(Products.PRODUCTS.PRICE, productsRecord.price())
                 .set(Products.PRODUCTS.QUANTITY, productsRecord.quantity())
                 .set(Products.PRODUCTS.DESCRIPTION, productsRecord.description())

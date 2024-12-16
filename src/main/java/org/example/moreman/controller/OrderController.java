@@ -3,6 +3,7 @@ package org.example.moreman.controller;
 import com.agro.public_.tables.records.OrdersRecord;
 import org.example.moreman.model.request.OrderRecord;
 import org.example.moreman.model.response.OrderResponse;
+import org.example.moreman.model.response.OrderResponseToGet;
 import org.example.moreman.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,12 +32,12 @@ public class OrderController {
         return new ResponseEntity<>(createdOrder, HttpStatus.CREATED);
     }
     @GetMapping
-    public ResponseEntity<List<OrderResponse>> getOrdersByDateRange(
+    public ResponseEntity<List<OrderResponseToGet>> getOrdersByDateRange(
             @RequestParam String startDate,
             @RequestParam String endDate) {
         LocalDate start = LocalDate.parse(startDate); // Parse the start date
         LocalDate end = LocalDate.parse(endDate);     // Parse the end date
-        List<OrderResponse> orders = orderService.getOrdersByDateRange(start, end);
+        List<OrderResponseToGet> orders = orderService.getOrdersByDateRange(start, end);
         return ResponseEntity.ok(orders);
     }
 

@@ -14,7 +14,7 @@ public interface CategoryService {
 
     CategoryRecord createCategory(String name, String image);
 
-    public void updateCategory(Integer id, String name, String image);
+    void updateCategory(Integer id, String name, String image);
 
-    public void deleteCategory(Integer id);
+    void deleteCategory(Integer id);
 }

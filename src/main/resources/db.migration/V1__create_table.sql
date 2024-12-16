@@ -1,5 +1,3 @@
-
-
 create table category (
                           id serial primary key,
                           image varchar,
@@ -18,7 +16,6 @@ create table products(
 
 );
 
-
 create table orders(
     id serial primary key,
     product_id integer references products(id),
@@ -28,28 +25,31 @@ create table orders(
 
 );
 
-
 ALTER TABLE products
     ADD CONSTRAINT fk_user_quids
         FOREIGN KEY (category_id)
             REFERENCES category(id);
 
-
-
-create type role as enum ('ADMIN', 'USER');
-
-
 create table user_infos
 (
     id       serial primary key,
     email    varchar unique,
-    password varchar,
-    role     role
+    password varchar
 );
 
-create table users
-(
-    id           serial primary key,
-    user_info_id integer references user_infos (id)
+insert into user_infos (email, password)
+values ('string','$2a$12$qWrStX4NRsfa.kVHCRQL.eVvsYfY9F0casMvGLhxKLlfrVCCSGj/q');
 
-);
+insert into category (image, name)
+values ('1734161749465Category (1).png','сеты'),
+       ('1734161705274Category (3).png','суши'),
+       ('1734098385740Category.png','супы'),
+       ('1734161798490Icon.png','десерты'),
+       ('1734161824064Category (4).png','закуски'),
+       ('1734161855713Category (5).png','поке боулы'),
+       ('1734161882313Category (6).png','салаты'),
+       ('1734161903401Category (7).png','горячее'),
+       ('1734161924973Category (8).png','сашими'),
+       ('1734161949218Icon (1).png','напитки')
+
+

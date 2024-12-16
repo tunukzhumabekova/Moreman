@@ -7,9 +7,9 @@ buildscript {
         mavenCentral()
     }
     ext {
-        default_url = 'jdbc:postgresql://localhost:5433/postgres'
-        default_user = 'postgres'
-        default_password = '1234'
+        default_url = 'jdbc:postgresql://3.75.223.91:5433/postgres'
+        default_user = 'moreuser'
+        default_password = 'morepass'
     }
 }
 
@@ -92,9 +92,9 @@ tasks.named('test') {
 }
 
 flyway {
-    url = 'jdbc:postgresql://localhost:5433/postgres'
-    user = 'postgres'
-    password = '1234'
+    url = 'jdbc:postgresql://3.75.223.91:5433/postgres'
+    user = 'moreuser'
+    password = 'morepass'
     locations = ['filesystem:src/main/resources/db.migration']
     configurations = ['flywayMigration']
 }
@@ -106,9 +106,9 @@ jooq {
                 logging = org.jooq.meta.jaxb.Logging.WARN
                 jdbc {
                     driver = 'org.postgresql.Driver'
-                    url = 'jdbc:postgresql://localhost:5433/postgres'
-                    user = 'postgres'
-                    password = '1234'
+                    url = 'jdbc:postgresql://3.75.223.91:5433/postgres'
+                    user = 'moreuser'
+                    password = 'morepass'
                 }
 
                 generator {

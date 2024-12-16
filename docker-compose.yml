@@ -7,7 +7,7 @@ services:
       - "8080:2023"
     environment:
       APP_DATABASE_URL: jdbc:postgresql://3.66.223.129:5432/postgres
-      APP_DATABASE_USER: moremanuser
-      APP_DATABASE_PASS: moremanpass
+      APP_DATABASE_USER: moreuser
+      APP_DATABASE_PASS: morepass
       SERVER_PORT: 2023
       SPRING_PROFILES_ACTIVE: dev
