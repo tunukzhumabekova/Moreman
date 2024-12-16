@@ -6,5 +6,5 @@ RUN chmod +x gradlew && ./gradlew clean build -x test || { echo "Build failed"; 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY --from=build /app/build/libs/Morema-0.0.1-SNAPSHOT.jar ./
-CMD ["java", "-jar", "ORT-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "Moreman-0.0.1-SNAPSHOT.jar"]
 EXPOSE 2023
