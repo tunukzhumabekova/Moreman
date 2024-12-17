@@ -10,4 +10,4 @@ services:
       APP_DATABASE_USER: moreuser
       APP_DATABASE_PASS: morepass
       SERVER_PORT: 2023
-      SPRING_PROFILES_ACTIVE: dev
+      SPRING_PROFILES_ACTIVE: master
