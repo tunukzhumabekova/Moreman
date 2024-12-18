@@ -39,7 +39,7 @@ public class SecurityConfig {
             "/s3/image/{fileName}/**",
             "/orders/**",
             "/products/**",
-            "/categories/**",
+            "api/categories/**",
     };
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final AuthenticationProvider authenticationProvider;
