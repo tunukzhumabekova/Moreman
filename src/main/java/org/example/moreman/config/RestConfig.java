@@ -15,9 +15,7 @@ public class RestConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost:3000");
-        config.addAllowedOrigin("http://ort.kg");
-        config.addAllowedOrigin("https://ort.kg");
-        config.addAllowedOrigin("http://ec2-54-198-72-65.compute-1.amazonaws.com");
+        config.addAllowedOrigin("http://ec2-3-122-192-227.eu-central-1.compute.amazonaws.com");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", config);
