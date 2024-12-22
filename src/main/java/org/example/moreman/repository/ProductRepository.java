@@ -33,7 +33,8 @@ public class ProductRepository {
                         record.get(PRODUCTS.QUANTITY),
                         record.get(PRODUCTS.DESCRIPTION),
                         record.get(PRODUCTS.POPULAR),
-                        record.get(PRODUCTS.CATEGORY_ID)
+                        record.get(PRODUCTS.CATEGORY_ID),
+                        record.getSale()
                 ));
     }
 
@@ -52,7 +53,8 @@ public class ProductRepository {
                     result.get(PRODUCTS.QUANTITY),
                     result.get(PRODUCTS.DESCRIPTION),
                     result.get(PRODUCTS.POPULAR),
-                    result.get(PRODUCTS.CATEGORY_ID)
+                    result.get(PRODUCTS.CATEGORY_ID),
+                    result.getSale()
             );
         }
 
@@ -69,7 +71,8 @@ public class ProductRepository {
                 .set(PRODUCTS.DESCRIPTION, productRecord.description())
                 .set(PRODUCTS.POPULAR, productRecord.isPopular())
                 .set(PRODUCTS.CATEGORY_ID, productRecord.categoryId())
-                .returning(PRODUCTS.ID, PRODUCTS.NAME, PRODUCTS.IMAGE, PRODUCTS.PRICE, PRODUCTS.QUANTITY, PRODUCTS.DESCRIPTION, PRODUCTS.POPULAR, PRODUCTS.CATEGORY_ID)
+                .set(PRODUCTS.SALE,productRecord.sale())
+                .returning(PRODUCTS.ID, PRODUCTS.NAME, PRODUCTS.IMAGE, PRODUCTS.PRICE, PRODUCTS.QUANTITY, PRODUCTS.DESCRIPTION, PRODUCTS.POPULAR, PRODUCTS.CATEGORY_ID,PRODUCTS.SALE)
                 .fetchOne();
 
         if (result != null) {
@@ -81,7 +84,8 @@ public class ProductRepository {
                     result.getQuantity(),
                     result.getDescription(),
                     result.getPopular(),
-                    result.getCategoryId()
+                    result.getCategoryId(),
+                    result.getSale()
             );
         }
 
@@ -97,6 +101,7 @@ public class ProductRepository {
                 .set(Products.PRODUCTS.DESCRIPTION, productsRecord.description())
                 .set(Products.PRODUCTS.POPULAR, productsRecord.isPopular())
                 .set(Products.PRODUCTS.CATEGORY_ID, productsRecord.categoryId())
+                .set(Products.PRODUCTS.SALE, productsRecord.sale())
                 .where(Products.PRODUCTS.ID.eq(Math.toIntExact(id)))
                 .execute();
     }
@@ -124,7 +129,8 @@ public class ProductRepository {
                         result.getQuantity(),
                         result.getDescription(),
                         result.getPopular(),
-                        result.getCategoryId()
+                        result.getCategoryId(),
+                        result.getSale()
                 ))
                 .collect(Collectors.toList());
 

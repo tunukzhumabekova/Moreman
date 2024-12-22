@@ -7,6 +7,7 @@ public record ProductRecord(
         int quantity,
         String description,
         boolean isPopular,
-        int categoryId
+        int categoryId,
+        int sale
 ) {
 }

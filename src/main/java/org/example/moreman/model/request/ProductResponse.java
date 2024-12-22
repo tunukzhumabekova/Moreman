@@ -8,6 +8,7 @@ public record ProductResponse(
         int quantity,
         String description,
         boolean isPopular,
-        int categoryId
+        int categoryId,
+        int sale
 ) {
 }
