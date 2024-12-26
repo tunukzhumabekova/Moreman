@@ -74,4 +74,11 @@ public class OrderRepository {
                 ))
                 .collect(Collectors.toList());
     }
+    public void deleteOrderById(Integer orderId) {
+        dslContext.deleteFrom(ORDERS).where(ORDERS.ID.eq(orderId)).execute();
+    }
+
+    public void deleteAllOrders(){
+        dslContext.deleteFrom(ORDERS).execute();
+    }
 }

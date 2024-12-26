@@ -27,4 +27,14 @@ public class OrderServiceImpl implements OrderService {
     public List<OrderResponseToGet> getOrdersByDateRange(LocalDate startDate, LocalDate endDate) {
         return orderRepository.getOrdersByDateRange(startDate, endDate);
     }
+
+    @Override
+    public void deleteOrderById(Integer id) {
+        orderRepository.deleteOrderById(id);
+    }
+
+    @Override
+    public void deleteAllOrders() {
+        orderRepository.deleteAllOrders();
+    }
 }

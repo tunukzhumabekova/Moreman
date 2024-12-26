@@ -8,7 +8,11 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface OrderService {
-     List<OrderResponse> createOrder(List<OrderRecord> orderRecord) ;
-     List<OrderResponseToGet> getOrdersByDateRange(LocalDate startDate, LocalDate endDate) ;
+    List<OrderResponse> createOrder(List<OrderRecord> orderRecord);
 
-    }
+    List<OrderResponseToGet> getOrdersByDateRange(LocalDate startDate, LocalDate endDate);
+
+    void deleteOrderById(Integer id);
+
+    void deleteAllOrders();
+}

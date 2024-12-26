@@ -1,6 +1,5 @@
 package org.example.moreman.controller;
 
-import com.agro.public_.tables.records.OrdersRecord;
 import org.example.moreman.model.request.OrderRecord;
 import org.example.moreman.model.response.OrderResponse;
 import org.example.moreman.model.response.OrderResponseToGet;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/orders")
@@ -31,6 +30,7 @@ public class OrderController {
         List<OrderResponse> createdOrder = orderService.createOrder(orderRecord);
         return new ResponseEntity<>(createdOrder, HttpStatus.CREATED);
     }
+
     @GetMapping
     public ResponseEntity<List<OrderResponseToGet>> getOrdersByDateRange(
             @RequestParam String startDate,
@@ -41,5 +41,13 @@ public class OrderController {
         return ResponseEntity.ok(orders);
     }
 
+    @DeleteMapping("/deleteById")
+    public void deleteById(@RequestParam Integer id) {
+        orderService.deleteOrderById(id);
+    }
 
+    @DeleteMapping("/deleteAll")
+   public void deleteAll() {
+        orderService.deleteAllOrders();
+    }
 }
