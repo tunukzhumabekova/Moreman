@@ -74,7 +74,7 @@ public class SecurityConfig {
                         configurer.authenticationEntryPoint(
                                         (request, response, exception) -> {
                                             response.setStatus(
-                                                    HttpStatus.NOT_FOUND
+                                                    HttpStatus.UNAUTHORIZED
                                                             .value()
                                             );
                                             response.getWriter()
